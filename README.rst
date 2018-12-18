@@ -2,14 +2,11 @@
 drf-tus
 =============================
 
-.. image:: https://badge.fury.io/py/drf-tus.svg
-    :target: https://badge.fury.io/py/drf-tus
+.. image:: https://travis-ci.org/bancek/drf-tus.svg?branch=master
+    :target: https://travis-ci.org/bancek/drf-tus
 
-.. image:: https://travis-ci.org/dirkmoors/drf-tus.svg?branch=master
-    :target: https://travis-ci.org/dirkmoors/drf-tus
-
-.. image:: https://codecov.io/gh/dirkmoors/drf-tus/branch/master/graph/badge.svg
-    :target: https://codecov.io/gh/dirkmoors/drf-tus
+.. image:: https://codecov.io/gh/bancek/drf-tus/branch/master/graph/badge.svg
+    :target: https://codecov.io/gh/bancek/drf-tus
 
 A Tus (tus.io) library for Django Rest Framework
 
