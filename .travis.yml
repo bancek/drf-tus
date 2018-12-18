@@ -1,36 +1,19 @@
 language: python
-addons:
-  apt:
-    sources:
-      - deadsnakes
-    packages:
-      - python3.5
-      - python3.6
-      - python3.7
+cache: pip
+dist: xenial
+
+sudo: false
+
+matrix:
+  include:
+    - python: 2.7
+    - python: 3.4
+    - python: 3.5
+    - python: 3.6
+    - python: 3.7
+      dist: xenial
+      sudo: true
 install:
   - pip install tox
 script:
   - tox
-env:
-  - TOXENV=py27-django-18
-  - TOXENV=py34-django-18
-  - TOXENV=py35-django-18
-  - TOXENV=py36-django-18
-  - TOXENV=py27-django-19
-  - TOXENV=py34-django-19
-  - TOXENV=py35-django-19
-  - TOXENV=py36-django-19
-  - TOXENV=py27-django-110
-  - TOXENV=py34-django-110
-  - TOXENV=py35-django-110
-  - TOXENV=py36-django-110
-  - TOXENV=py27-django-111
-  - TOXENV=py34-django-111
-  - TOXENV=py35-django-111
-  - TOXENV=py36-django-111
-  - TOXENV=py35-django-200
-  - TOXENV=py36-django-200
-  - TOXENV=py37-django-200
-  - TOXENV=py35-django-210
-  - TOXENV=py36-django-210
-  - TOXENV=py37-django-210
